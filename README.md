@@ -10,15 +10,7 @@ Installation using NPM
 npm install @pokedex/pokemon-list-dm
 ```
 
-### Entry points & exports
-
-- (Default entry point)
-  - PokemonListDm (Class)
-- pokemon-list-dm.js
-  - pokemon-list-dm (Custom Element)
-
-
-## PokemonListDm (Class) pokemon-list-dm (Custom Element) 
+## PokemonListDm (Class) pokemon-list-dm (Custom Element)
 
 ### Extends from
 
@@ -43,24 +35,22 @@ import '@pokedex/pokemon-list-dm/pokemon-list-dm.js';
 ```
 
 ```html
-<pokemon-list-dm ...>
-  ...
-</pokemon-list-dm>
+<pokemon-list-dm ...> ... </pokemon-list-dm>
 ```
 
 ### Description
 
 ![LitElement component](https://img.shields.io/badge/litElement-component-blue.svg)
 
-This component ...
+This component lists a series of pokemon in order of dex number provided by the pokeapi
 
 Example:
 
 ```html
-  <pokemon-list-dm></pokemon-list-dm>
+<pokemon-list-dm></pokemon-list-dm>
 ```
 
 ### Properties
 
-- **name**: string = "Cells" (attribute: name)
-    Description for property
+- **page**: string = "https://pokeapi.co/api/v2/pokemon" (attribute: page)
+  Get the home page for the pokeapi
