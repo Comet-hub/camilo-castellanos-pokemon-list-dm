@@ -82,11 +82,8 @@ export class PokemonListDm extends LitElement {
     const evolution = await this.fetchEvolutionChain(
       species.evolution_chain.url,
     );
-    let evo = {
-      id: evolution.id,
-      evolution,
-    };
-    return evo;
+
+    return evolution;
   }
 
   async fetchSpecies(url) {
